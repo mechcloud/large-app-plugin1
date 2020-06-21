@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build-lib": "npx vue-cli-service build --target lib --formats umd-min --no-clean --name 'plugin.[chunkhash]' src/main.js"
+    "build-lib": "npx vue-cli-service build --target lib --formats umd-min --no-clean --name 'plugin.[chunkhash]' src/plugin.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
