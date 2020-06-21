@@ -1,3 +1,11 @@
-import Home from './Home.vue'
+import PluginHome from './PluginHome.vue'
 
-export default Home;
+let moduleRoutes = [
+    {
+        path: '/module1',
+        name: 'module-1',
+        component: PluginHome
+    }
+]
+
+ROUTES1.push(...moduleRoutes)
