@@ -1,11 +1,10 @@
-import PluginHome from './PluginHome.vue'
+const PluginHome = () => import('./PluginHome.vue')
 
-let moduleRoutes = [
+let pluginRoutes = [
     {
-        path: '/module1',
-        name: 'module-1',
+        path: '/plugin1',
         component: PluginHome
     }
 ]
 
-ROUTES1.push(...moduleRoutes)
+ROUTES1.push(...pluginRoutes)
