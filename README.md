@@ -1,19 +1,15 @@
-# large-app-module1
+# large-app-plugin1
 
-## Project setup
+## Deploying this plugin in docker
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+cd <workspace>
+git checkout git@github.com:koyadume/large-app-plugin1.git
+cd large-app-plugin1
+docker build -t large-app-plugin1 . && docker run -d --name=large-app-plugin1 -p 8091:80 large-app-plugin1
 ```
 
-### Compiles and minifies for production
+## Testing plugin app
 ```
-yarn build-lib
+curl http://<docker-vm-ip>:8091
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
