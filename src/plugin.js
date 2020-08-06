@@ -1,5 +1,7 @@
 const PluginHome = () => import('./PluginHome.vue')
 
+// import PluginHome from './PluginHome'
+
 let pluginRoutes = [
     {
         path: '/plugin1',
